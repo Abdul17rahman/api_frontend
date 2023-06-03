@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>API</title>
+  </head>
+  <body>
+    <h1>Jokes App using Fetch API</h1>
+    <div class="jokes">
+      <h3>Randomly generates a joke on page reload</h3>
+      <ul>
+        <h5>Category: <span id="category"></span></h5>
+        <h5>Type: <span id="type"></span></h5>
+        <p id="first"></p>
+        <p id="second"></p>
+      </ul>
+    </div>
+    <div class="gen">
+      <h3>Generate jokes by clicking a button</h3>
+      <label for="category">Select Category</label>
+      <select name="category" id="category">
+        <option value="Programming">Programming</option>
+        <option value="Misc">Music</option>
+        <option value="Spooky">Spooky</option>
+        <option value="Dark">Dark</option>
+        <option value="Christmas">Christmans</option>
+        <option value="Pun">Pun</option>
+      </select>
+      <button type="submit">Get Joke</button>
+      <div>
+        <ul id="jokesList"></ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
